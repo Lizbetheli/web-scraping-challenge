@@ -5,23 +5,81 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Mars</title>
+  <title>Mission to Mars</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 
 <body>
   <div class="container-fluid">
     <div class="jumbotron text-center">
-      <h1>Mars!!</h1>
-      <p>Beach. Rainforest. Volcano. Tree House. Sloths.</p>
+      <h1>Mission to Mars!!</h1>
       <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Get Data!</a></p>
     </div>
-    <img src="{{ vacation.sloth_img }}" alt="Sloth">
-    <h2>The typical weather in Costa Rica is:</h2>
-    <h3>Max Temp: {{ vacation.max_temp }}</h3>
-    <h3>Min Temp: {{ vacation.min_temp }}</h3>
+    <div class="container"></div>
+     <div class = "col-md-7">
+      <div class="col-md-12">
+        <h3>Featured Mars image</h3>
+          <div class="row">
+            <div >
+              <a href="https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA18897_hires.jpg">
+                <img src="https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA18897_hires.jpg" alt="Main image" style="width:100%">
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="col-md-5">
+        <div class="col-md-12">
+            <h3>Mars Information</h3>
+            <div class="row">
+                <div class="col-6 col-md-6">
+                  <table border="1" class="dataframe"> <thead>    <tr style="text-align: right;">      <th></th>      <th>Mars</th>   </tr>  <tr>  <th>Description</th>      <th></th>  </tr> </thead> <tbody> <tr>  <th>Equatorial Diameter:</th>      <td>6,792 km</td>    </tr>  <tr>    <th>Polar Diameter:</th>    <td>6,752 km</td> </tr>   <tr>      <th>Mass:</th>     <td>6.39 × 10^23 kg (0.11 Earths)</td>  </tr> <tr>     <th>Moons:</th>      <td>2 (Phobos &amp; Deimos)</td>    </tr>    <tr>     <th>Orbit Distance:</th>      <td>227,943,824 km (1.38 AU)</td>    </tr>    <tr>      <th>Orbit Period:</th>     <td>687 days (1.9 years)</td>   </tr>   <tr>    <th>Surface Temperature:</th>      <td>-87 to -5 °C</td>    </tr>    <tr>    <th>First Record:</th>      <td>2nd millennium BC</td>    </tr>    <tr>   <th>Recorded By:</th>      <td>Egyptian astronomers</td>    </tr>  </tbody></table>'
+            </div>   
+        </div>  
+    </div>
   </div>
-  </div>
+<br>
+  <div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-6">
+           <h2 class="heading">Mars Hemispheres</h2>
+          <a href="https://astrogeology.usgs.gov/cache/images/f5e372a36edfa389625da6d0cc25d905_cerberus_enhanced.tif_full.jpg">
+            <img src="https://astrogeology.usgs.gov/cache/images/f5e372a36edfa389625da6d0cc25d905_cerberus_enhanced.tif_full.jpg" alt="Main image" style="width:100%">
+            <div class="caption">
+              <p>Cerebrus</p>
+            </div>
+        </div>
+          </a>
+        <div class="col-sm-6">
+          <a href="https://astrogeology.usgs.gov/cache/images/3778f7b43bbbc89d6e3cfabb3613ba93_schiaparelli_enhanced.tif_full.jpg">
+            <img src="https://astrogeology.usgs.gov/cache/images/3778f7b43bbbc89d6e3cfabb3613ba93_schiaparelli_enhanced.tif_full.jpg" alt="Main image" style="width:100%">
+            <div class="caption">
+              <p>Schiparelli</p>
+            </div>
+        </div>
+          </a>
+          </div>
+          <div class="row">
+        <div class="col-sm-6">
+          <a href="https://astrogeology.usgs.gov/cache/images/555e6403a6ddd7ba16ddb0e471cadcf7_syrtis_major_enhanced.tif_full.jpg">
+            <img src="https://astrogeology.usgs.gov/cache/images/555e6403a6ddd7ba16ddb0e471cadcf7_syrtis_major_enhanced.tif_full.jpg" alt="Main image" style="width:100%">
+            <div class="caption">
+              <p>Syrtis Major</p>
+            </div>
+        </div>
+          </a>
+        <div class="col-sm-6">
+          <a href="https://astrogeology.usgs.gov/cache/images/b3c7c6c9138f57b4756be9b9c43e3a48_valles_marineris_enhanced.tif_full.jpg">
+            <img src="https://astrogeology.usgs.gov/cache/images/b3c7c6c9138f57b4756be9b9c43e3a48_valles_marineris_enhanced.tif_full.jpg" alt="Main image" style="width:100%">
+            <div class="caption">
+              <p>Valles Marineris</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      </div>
+  </div> 
+
 </body>
 
 </html>
